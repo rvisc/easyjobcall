@@ -1,462 +1,491 @@
----
-title: EasyJobCall
-permalink: /privacy.html
----
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EasyJobCall — Privacy</title>
+<!--
+  Pagina **autonoma**: nessun foglio di stile esterno, nessun tema Jekyll.
+  E' l'indirizzo obbligatorio della scheda del Microsoft Store, quindi deve
+  aprirsi anche il giorno in cui il tema del sito cambia o non compila.
+  Stessa impostazione della pagina gemella di Hexwreck.
 
-<img src="logo-vis-k.png" alt="Vis-K" class="logo-vis-k" width="76">
+  I colori sono quelli del prodotto (src/easyjobcall/ui/splash.py e
+  tools/genera_sfondo_splash.py); la variante chiara e' la predefinita perche'
+  un documento che si legge tutto d'un fiato si legge meglio su carta chiara, e
+  quella scura segue l'impostazione del sistema.
+-->
+<style>
+  :root {
+    --paper: #eef2f6; --plate: #f8fafc; --ink: #0d1620; --ink-soft: #465666;
+    --ink-faint: #5d6e80; --rule: #c6d4e2; --first: #0f766e;
+    --sans: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #131820; --plate: #1c2331; --ink: #f2f5f9; --ink-soft: #a9bcd0;
+      --ink-faint: #8a97ab; --rule: #2e4a55; --first: #4fd1c5;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 4rem; background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 1rem; line-height: 1.65;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0; letter-spacing: .01em; }
+  nav { margin: 1.25rem 0 0; padding: .9rem 0; border-top: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule); }
+  nav a { color: var(--first); text-decoration: none; margin-right: 1.1rem;
+          display: inline-block; padding: .15rem 0; }
+  nav a:hover { text-decoration: underline; }
+  section { margin: 3rem 0 0; padding: 1.75rem 1.75rem .5rem; background: var(--plate);
+            border: 1px solid var(--rule); border-radius: .5rem; }
+  h2 { font-size: 1.15rem; margin: 0; letter-spacing: .06em; }
+  h3 { font-size: .95rem; margin: 2rem 0 .35rem; letter-spacing: .05em; color: var(--ink-soft); }
+  p { margin: .35rem 0 1.1rem; }
+  p.versione { color: var(--ink-faint); margin: .3rem 0 1.6rem; font-size: .95rem; }
+  strong { font-weight: 600; }
+  ul { margin: .35rem 0 1.1rem; padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  code { font-family: Consolas, "Cascadia Mono", monospace; font-size: .92em;
+         background: var(--paper); border: 1px solid var(--rule);
+         border-radius: .25rem; padding: 0 .25em; }
+  a { color: var(--first); }
+  p.contatto { color: var(--ink-faint); }
+  @media (max-width: 34rem) { section { padding: 1.25rem 1.1rem .25rem; } }
+</style>
+</head>
+<body>
+<main>
 
-# EasyJobCall — Privacy
+<h1>EasyJobCall — Privacy</h1>
 
-<p class="lingue">
-<a href="#it">Italiano</a> ·
-<a href="#en">English</a> ·
-<a href="#fr">Français</a> ·
-<a href="#es">Español</a> ·
-<a href="#de">Deutsch</a> ·
-<a href="#zh">中文</a> ·
+<nav>
+<a href="#it">Italiano</a>
+<a href="#en">English</a>
+<a href="#fr">Français</a>
+<a href="#es">Español</a>
+<a href="#de">Deutsch</a>
+<a href="#zh">中文</a>
 <a href="./">&larr; EasyJobCall</a>
-</p>
+</nav>
 
----
+<section id="it">
+<h2>INFORMATIVA SULLA PRIVACY</h2>
+<p class="versione">EasyJobCall — versione 1.0.0</p>
 
-<h2 id="it">Italiano</h2>
+<p>EasyJobCall non raccoglie dati personali per conto del titolare e non gliene manda nessuno. Non
+ha telemetria, non traccia l'uso, non richiede un account e non comunica con nessun server del
+titolare, in nessuna configurazione.</p>
 
-<p class="occhiello">EasyJobCall non raccoglie dati personali per conto del titolare e non gliene
-manda nessuno. Non ha telemetria, non traccia l'uso, non richiede un account e non comunica con
-nessun server del titolare, in nessuna configurazione.</p>
+<p>Questo però non è un programma qualunque rispetto alla privacy, e la parte importante comincia
+qui: <strong>EasyJobCall ascolta e trascrive la voce di altre persone</strong>. Quelle voci e quelle
+frasi sono dati personali. Non arrivano al titolare, ma vengono trattate — e chi decide come
+trattarle è chi usa il programma.</p>
 
-Questo però non è un programma qualunque rispetto alla privacy, e la parte importante comincia
-qui: **EasyJobCall ascolta e trascrive la voce di altre persone**. Quelle voci e quelle frasi sono
-dati personali. Non arrivano al titolare, ma vengono trattate — e chi decide come trattarle è chi
-usa il programma.
-
-### Cosa ascolta, e quando
-
-Nella modalità predefinita cattura l'audio **riprodotto** dal computer: il flusso che va verso
-altoparlanti o cuffie, cioè le voci degli interlocutori. **Non apre il microfono.**
-
-Su richiesta esplicita dell'utente, e dopo una conferma dedicata, può invece ascoltare un
+<h3>COSA ASCOLTA, E QUANDO</h3>
+<p>Nella modalità predefinita cattura l'audio <strong>riprodotto</strong> dal computer: il flusso che
+va verso altoparlanti o cuffie, cioè le voci degli interlocutori. <strong>Non apre il
+microfono.</strong></p>
+<p>Su richiesta esplicita dell'utente, e dopo una conferma dedicata, può invece ascoltare un
 dispositivo di ingresso indicato da lui (microfono, line-in, scheda di acquisizione). In quella
-modalità viene trascritto **tutto ciò che quel dispositivo sente**, compresa la voce dell'utente e
-di chi si trova nella stanza. La modalità resta segnalata a schermo per tutto il tempo, non viene
-scritta nella configurazione, e al riavvio successivo il programma torna da solo alla modalità
-predefinita.
+modalità viene trascritto <strong>tutto ciò che quel dispositivo sente</strong>, compresa la voce
+dell'utente e di chi si trova nella stanza. La modalità resta segnalata a schermo per tutto il
+tempo, non viene scritta nella configurazione, e al riavvio successivo il programma torna da solo
+alla modalità predefinita.</p>
 
-### Dove va quello che sente
+<h3>DOVE VA QUELLO CHE SENTE</h3>
+<p>L'audio viene trascritto <strong>sul computer dell'utente</strong> e non lascia mai quella
+macchina, in nessuna configurazione. Ciò che può uscire è il <strong>testo già trascritto</strong>,
+e solo verso la destinazione scelta dall'utente per il motore che genera le risposte. Le
+destinazioni sono tre, e il programma le dichiara come tre cose diverse, sempre, con un'icona e una
+riga di stato che non spariscono:</p>
+<ul>
+<li><strong>Sul computer dell'utente</strong> — non esce niente.</li>
+<li><strong>Su un altro computer della rete locale</strong> — esce il testo trascritto, verso
+l'indirizzo indicato dall'utente, senza passare da internet e senza credenziali.</li>
+<li><strong>Presso un servizio in rete</strong> scelto e configurato dall'utente (per esempio
+Anthropic, OpenAI o Google) — esce il testo trascritto verso quel fornitore, con la chiave
+dell'utente; da quel momento vale l'informativa di quel fornitore, non questa.</li>
+</ul>
+<p>La terza scelta è dell'utente e il programma non la fa mai da solo: senza una chiave inserita da
+lui, nessuna richiesta esce dal computer.</p>
 
-L'audio viene trascritto **sul computer dell'utente** e non lascia mai quella macchina, in nessuna
-configurazione. Ciò che può uscire è il **testo già trascritto**, e solo verso la destinazione
-scelta dall'utente per il motore che genera le risposte. Le destinazioni sono tre, e il programma
-le dichiara come tre cose diverse, sempre, con un'icona e una riga di stato che non spariscono:
+<h3>LA REGISTRAZIONE</h3>
+<p>Salvare la conversazione è <strong>disattivato</strong>. Se l'utente lo attiva, un indicatore
+rosso resta visibile per tutto il tempo e i file restano sul suo computer, dove può rileggerli,
+esportarli e cancellarli dal programma stesso.</p>
 
-| destinazione | cosa esce |
-|---|---|
-| sul computer dell'utente | non esce niente |
-| su un altro computer della rete locale | il testo trascritto, verso l'indirizzo indicato dall'utente, senza passare da internet e senza credenziali |
-| presso un servizio in rete scelto e configurato dall'utente (per esempio Anthropic, OpenAI o Google) | il testo trascritto verso quel fornitore, con la chiave dell'utente; da quel momento vale l'informativa di quel fornitore, non questa |
+<h3>COSA VIENE SALVATO SUL COMPUTER</h3>
+<ul>
+<li>la configurazione, i profili di ruolo scritti dall'utente e le eventuali conversazioni salvate,
+in <code>%USERPROFILE%\.easyjobcall</code>;</li>
+<li>i componenti scaricati (modelli di trascrizione e di risposta), in
+<code>%LOCALAPPDATA%\EasyJobCall</code>;</li>
+<li>le chiavi API dei servizi in rete, <strong>mai</strong> nel file di configurazione: stanno nella
+Gestione credenziali di Windows, cifrate dal sistema.</li>
+</ul>
+<p>Si può cancellare tutto dal programma o a mano; l'installer del canale diretto lo chiede quando
+si disinstalla, con «No» come risposta predefinita.</p>
 
-La terza scelta è dell'utente e il programma non la fa mai da solo: senza una chiave inserita da
-lui, nessuna richiesta esce dal computer.
-
-### La registrazione
-
-Salvare la conversazione è **disattivato**. Se l'utente lo attiva, un indicatore rosso resta
-visibile per tutto il tempo e i file restano sul suo computer, dove può rileggerli, esportarli e
-cancellarli dal programma stesso.
-
-### Cosa viene salvato sul computer
-
-* la configurazione, i profili di ruolo scritti dall'utente e le eventuali conversazioni salvate,
-  in `%USERPROFILE%\.easyjobcall`;
-* i componenti scaricati (modelli di trascrizione e di risposta), in `%LOCALAPPDATA%\EasyJobCall`;
-* le chiavi API dei servizi in rete, **mai** nel file di configurazione: stanno nella Gestione
-  credenziali di Windows, cifrate dal sistema.
-
-Si può cancellare tutto dal programma o a mano; l'installer del canale diretto lo chiede quando si
-disinstalla, con «No» come risposta predefinita.
-
-### Responsabilità di chi usa il programma
-
-Registrare, trascrivere o far elaborare a terzi ciò che dicono altre persone può richiedere il
+<h3>RESPONSABILITÀ DI CHI USA IL PROGRAMMA</h3>
+<p>Registrare, trascrivere o far elaborare a terzi ciò che dicono altre persone può richiedere il
 loro consenso, ed è spesso soggetto a limiti di legge, contrattuali o aziendali. Verificarli e
 rispettarli è responsabilità di chi usa il programma. Rispetto ai dati personali trattati con
 EasyJobCall, l'utente agisce come titolare del trattamento: il titolare del software non li riceve,
-non vi ha accesso e non li tratta in alcuna forma.
+non vi ha accesso e non li tratta in alcuna forma.</p>
 
-### Componenti di terzi
+<h3>COMPONENTI DI TERZI</h3>
+<p>Il programma include componenti di terzi — fra gli altri Qt/PySide6, faster-whisper e llama.cpp —
+i cui testi di licenza viaggiano insieme al programma nel file <code>NOTICE-terzi.txt</code>.
+Nessuno di essi introduce telemetria attiva in questo prodotto.</p>
 
-Il programma include componenti di terzi — fra gli altri Qt/PySide6, faster-whisper e llama.cpp —
-i cui testi di licenza viaggiano insieme al programma nel file `NOTICE-terzi.txt`. Nessuno di essi
-introduce telemetria attiva in questo prodotto.
+<h3>TITOLARE E CONTATTO</h3>
+<p class="contatto">Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+</section>
 
-### Titolare e contatto
+<section id="en">
+<h2>PRIVACY NOTICE</h2>
+<p class="versione">EasyJobCall — version 1.0.0</p>
 
-Rosario Viscardi (Vis-K) — <vis-k@outlook.it>
+<p>EasyJobCall collects no personal data on behalf of the publisher and sends them none. It has no
+telemetry, does not track usage, requires no account and communicates with no server of the
+publisher, in any configuration.</p>
 
----
+<p>This is not, however, an ordinary program where privacy is concerned, and the important part
+starts here: <strong>EasyJobCall listens to and transcribes other people's voices</strong>. Those
+voices and those sentences are personal data. They never reach the publisher, but they are
+processed — and the person deciding how is whoever uses the program.</p>
 
-<h2 id="en">English</h2>
+<h3>WHAT IT LISTENS TO, AND WHEN</h3>
+<p>In its default mode it captures the audio <strong>played</strong> by the computer: the stream
+going to speakers or headphones, that is the voices of the other people in the call. <strong>It does
+not open the microphone.</strong></p>
+<p>At the user's explicit request, and after a dedicated confirmation, it can instead listen to an
+input device they choose (microphone, line-in, capture card). In that mode <strong>everything that
+device hears</strong> is transcribed, including the user's own voice and that of anyone in the room.
+The mode stays flagged on screen the whole time, is not written to the configuration, and at the
+next start the program returns to the default mode on its own.</p>
 
-<p class="occhiello">EasyJobCall collects no personal data on behalf of the publisher and sends
-them none. It has no telemetry, does not track usage, requires no account and communicates with no
-server of the publisher, in any configuration.</p>
+<h3>WHERE WHAT IT HEARS GOES</h3>
+<p>Audio is transcribed <strong>on the user's computer</strong> and never leaves that machine, in any
+configuration. What can leave is the <strong>already transcribed text</strong>, and only towards the
+destination the user chooses for the engine that writes the answers. There are three, and the
+program declares them as three different things, always, with an icon and a status line that do not
+go away:</p>
+<ul>
+<li><strong>On the user's computer</strong> — nothing leaves.</li>
+<li><strong>On another computer on the local network</strong> — the transcribed text leaves, towards
+the address the user gave, without going through the internet and without credentials.</li>
+<li><strong>To an online service</strong> the user chooses and configures (for example Anthropic,
+OpenAI or Google) — the transcribed text goes to that provider, with the user's key; from that
+point their privacy notice applies, not this one.</li>
+</ul>
+<p>The third choice is the user's and the program never makes it by itself: without a key they
+entered, no request leaves the computer.</p>
 
-This is not, however, an ordinary program where privacy is concerned, and the important part
-starts here: **EasyJobCall listens to and transcribes other people's voices**. Those voices and
-those sentences are personal data. They never reach the publisher, but they are processed — and
-the person deciding how is whoever uses the program.
+<h3>RECORDING</h3>
+<p>Saving the conversation is <strong>off</strong>. If the user turns it on, a red indicator stays
+visible the whole time and the files stay on their computer, where they can read them again, export
+them and delete them from the program itself.</p>
 
-### What it listens to, and when
+<h3>WHAT IS SAVED ON THE COMPUTER</h3>
+<ul>
+<li>the configuration, the role profiles the user writes and any saved conversations, in
+<code>%USERPROFILE%\.easyjobcall</code>;</li>
+<li>downloaded components (transcription and answering models), in
+<code>%LOCALAPPDATA%\EasyJobCall</code>;</li>
+<li>API keys for online services, <strong>never</strong> in the configuration file: they live in the
+Windows Credential Manager, encrypted by the system.</li>
+</ul>
+<p>All of it can be deleted from the program or by hand; the direct-channel installer asks on
+uninstall, with «No» as the default answer.</p>
 
-In its default mode it captures the audio **played** by the computer: the stream going to speakers
-or headphones, that is the voices of the other people in the call. **It does not open the
-microphone.**
-
-At the user's explicit request, and after a dedicated confirmation, it can instead listen to an
-input device they choose (microphone, line-in, capture card). In that mode **everything that device
-hears** is transcribed, including the user's own voice and that of anyone in the room. The mode
-stays flagged on screen the whole time, is not written to the configuration, and at the next start
-the program returns to the default mode on its own.
-
-### Where what it hears goes
-
-Audio is transcribed **on the user's computer** and never leaves that machine, in any
-configuration. What can leave is the **already transcribed text**, and only towards the destination
-the user chooses for the engine that writes the answers. There are three, and the program declares
-them as three different things, always, with an icon and a status line that do not go away:
-
-| destination | what leaves |
-|---|---|
-| on the user's computer | nothing leaves |
-| on another computer on the local network | the transcribed text, towards the address the user gave, without going through the internet and without credentials |
-| to an online service the user chooses and configures (for example Anthropic, OpenAI or Google) | the transcribed text to that provider, with the user's key; from that point their privacy notice applies, not this one |
-
-The third choice is the user's and the program never makes it by itself: without a key they
-entered, no request leaves the computer.
-
-### Recording
-
-Saving the conversation is **off**. If the user turns it on, a red indicator stays visible the
-whole time and the files stay on their computer, where they can read them again, export them and
-delete them from the program itself.
-
-### What is saved on the computer
-
-* the configuration, the role profiles the user writes and any saved conversations, in
-  `%USERPROFILE%\.easyjobcall`;
-* downloaded components (transcription and answering models), in `%LOCALAPPDATA%\EasyJobCall`;
-* API keys for online services, **never** in the configuration file: they live in the Windows
-  Credential Manager, encrypted by the system.
-
-All of it can be deleted from the program or by hand; the direct-channel installer asks on
-uninstall, with «No» as the default answer.
-
-### The responsibility of whoever uses the program
-
-Recording, transcribing or having a third party process what other people say may require their
+<h3>THE RESPONSIBILITY OF WHOEVER USES THE PROGRAM</h3>
+<p>Recording, transcribing or having a third party process what other people say may require their
 consent, and is often subject to legal, contractual or company limits. Checking and respecting them
 is the responsibility of whoever uses the program. With respect to personal data processed through
 EasyJobCall, the user acts as the data controller: the publisher of the software does not receive
-it, has no access to it and does not process it in any form.
+it, has no access to it and does not process it in any form.</p>
 
-### Third-party components
+<h3>THIRD-PARTY COMPONENTS</h3>
+<p>The program includes third-party components — among others Qt/PySide6, faster-whisper and
+llama.cpp — whose licence texts travel with the program in the <code>NOTICE-terzi.txt</code> file.
+None of them introduces active telemetry in this product.</p>
 
-The program includes third-party components — among others Qt/PySide6, faster-whisper and
-llama.cpp — whose licence texts travel with the program in the `NOTICE-terzi.txt` file. None of
-them introduces active telemetry in this product.
+<h3>PUBLISHER AND CONTACT</h3>
+<p class="contatto">Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+</section>
 
-### Publisher and contact
+<section id="fr">
+<h2>POLITIQUE DE CONFIDENTIALITÉ</h2>
+<p class="versione">EasyJobCall — version 1.0.0</p>
 
-Rosario Viscardi (Vis-K) — <vis-k@outlook.it>
+<p>EasyJobCall ne collecte aucune donnée personnelle pour le compte de l'éditeur et ne lui en envoie
+aucune. Il n'a pas de télémétrie, ne suit pas l'usage, n'exige pas de compte et ne communique avec
+aucun serveur de l'éditeur, dans aucune configuration.</p>
 
----
+<p>Ce n'est cependant pas un programme ordinaire du point de vue de la vie privée, et la partie
+importante commence ici : <strong>EasyJobCall écoute et transcrit la voix d'autres
+personnes</strong>. Ces voix et ces phrases sont des données personnelles. Elles ne parviennent pas
+à l'éditeur, mais elles sont traitées — et celui qui décide comment est celui qui utilise le
+programme.</p>
 
-<h2 id="fr">Français</h2>
-
-<p class="occhiello">EasyJobCall ne collecte aucune donnée personnelle pour le compte de l'éditeur
-et ne lui en envoie aucune. Il n'a pas de télémétrie, ne suit pas l'usage, n'exige pas de compte et
-ne communique avec aucun serveur de l'éditeur, dans aucune configuration.</p>
-
-Ce n'est cependant pas un programme ordinaire du point de vue de la vie privée, et la partie
-importante commence ici : **EasyJobCall écoute et transcrit la voix d'autres personnes**. Ces voix
-et ces phrases sont des données personnelles. Elles ne parviennent pas à l'éditeur, mais elles sont
-traitées — et celui qui décide comment est celui qui utilise le programme.
-
-### Ce qu'il écoute, et quand
-
-Dans son mode par défaut, il capte l'audio **restitué** par l'ordinateur : le flux qui part vers
-les haut-parleurs ou le casque, c'est-à-dire les voix des interlocuteurs. **Il n'ouvre pas le
-microphone.**
-
-À la demande explicite de l'utilisateur, et après une confirmation dédiée, il peut écouter à la
+<h3>CE QU'IL ÉCOUTE, ET QUAND</h3>
+<p>Dans son mode par défaut, il capte l'audio <strong>restitué</strong> par l'ordinateur : le flux
+qui part vers les haut-parleurs ou le casque, c'est-à-dire les voix des interlocuteurs. <strong>Il
+n'ouvre pas le microphone.</strong></p>
+<p>À la demande explicite de l'utilisateur, et après une confirmation dédiée, il peut écouter à la
 place un périphérique d'entrée qu'il désigne (microphone, entrée ligne, carte d'acquisition). Dans
-ce mode, **tout ce que ce périphérique entend** est transcrit, y compris la voix de l'utilisateur
-et celle des personnes présentes dans la pièce. Le mode reste signalé à l'écran pendant toute sa
-durée, n'est pas inscrit dans la configuration, et au démarrage suivant le programme revient de
-lui-même au mode par défaut.
+ce mode, <strong>tout ce que ce périphérique entend</strong> est transcrit, y compris la voix de
+l'utilisateur et celle des personnes présentes dans la pièce. Le mode reste signalé à l'écran
+pendant toute sa durée, n'est pas inscrit dans la configuration, et au démarrage suivant le
+programme revient de lui-même au mode par défaut.</p>
 
-### Où va ce qu'il entend
+<h3>OÙ VA CE QU'IL ENTEND</h3>
+<p>L'audio est transcrit <strong>sur l'ordinateur de l'utilisateur</strong> et ne quitte jamais cette
+machine, dans aucune configuration. Ce qui peut sortir, c'est le <strong>texte déjà
+transcrit</strong>, et uniquement vers la destination choisie par l'utilisateur pour le moteur qui
+rédige les réponses. Il y en a trois, et le programme les déclare comme trois choses différentes,
+toujours, avec une icône et une ligne d'état qui ne disparaissent pas :</p>
+<ul>
+<li><strong>Sur l'ordinateur de l'utilisateur</strong> — rien ne sort.</li>
+<li><strong>Sur un autre ordinateur du réseau local</strong> — le texte transcrit sort, vers
+l'adresse indiquée par l'utilisateur, sans passer par internet et sans identifiants.</li>
+<li><strong>Vers un service en ligne</strong> choisi et configuré par l'utilisateur (par exemple
+Anthropic, OpenAI ou Google) — le texte transcrit part vers ce fournisseur, avec la clé de
+l'utilisateur ; à partir de là c'est sa politique qui s'applique, pas celle-ci.</li>
+</ul>
+<p>Le troisième choix est celui de l'utilisateur et le programme ne le fait jamais tout seul : sans
+une clé qu'il a saisie, aucune requête ne quitte l'ordinateur.</p>
 
-L'audio est transcrit **sur l'ordinateur de l'utilisateur** et ne quitte jamais cette machine, dans
-aucune configuration. Ce qui peut sortir, c'est le **texte déjà transcrit**, et uniquement vers la
-destination choisie par l'utilisateur pour le moteur qui rédige les réponses. Il y en a trois, et
-le programme les déclare comme trois choses différentes, toujours, avec une icône et une ligne
-d'état qui ne disparaissent pas :
+<h3>L'ENREGISTREMENT</h3>
+<p>La sauvegarde de la conversation est <strong>désactivée</strong>. Si l'utilisateur l'active, un
+indicateur rouge reste visible pendant toute la durée et les fichiers restent sur son ordinateur, où
+il peut les relire, les exporter et les supprimer depuis le programme lui-même.</p>
 
-| destination | ce qui sort |
-|---|---|
-| sur l'ordinateur de l'utilisateur | rien ne sort |
-| sur un autre ordinateur du réseau local | le texte transcrit, vers l'adresse indiquée par l'utilisateur, sans passer par internet et sans identifiants |
-| vers un service en ligne choisi et configuré par l'utilisateur (par exemple Anthropic, OpenAI ou Google) | le texte transcrit vers ce fournisseur, avec la clé de l'utilisateur ; à partir de là c'est sa politique qui s'applique, pas celle-ci |
+<h3>CE QUI EST ENREGISTRÉ SUR L'ORDINATEUR</h3>
+<ul>
+<li>la configuration, les profils de métier écrits par l'utilisateur et les conversations
+éventuellement sauvegardées, dans <code>%USERPROFILE%\.easyjobcall</code> ;</li>
+<li>les composants téléchargés (modèles de transcription et de réponse), dans
+<code>%LOCALAPPDATA%\EasyJobCall</code> ;</li>
+<li>les clés API des services en ligne, <strong>jamais</strong> dans le fichier de configuration :
+elles se trouvent dans le Gestionnaire d'identification de Windows, chiffrées par le système.</li>
+</ul>
+<p>Tout cela peut être supprimé depuis le programme ou à la main ; l'installateur du canal direct
+pose la question à la désinstallation, avec «Non» comme réponse par défaut.</p>
 
-Le troisième choix est celui de l'utilisateur et le programme ne le fait jamais tout seul : sans
-une clé qu'il a saisie, aucune requête ne quitte l'ordinateur.
-
-### L'enregistrement
-
-La sauvegarde de la conversation est **désactivée**. Si l'utilisateur l'active, un indicateur rouge
-reste visible pendant toute la durée et les fichiers restent sur son ordinateur, où il peut les
-relire, les exporter et les supprimer depuis le programme lui-même.
-
-### Ce qui est enregistré sur l'ordinateur
-
-* la configuration, les profils de métier écrits par l'utilisateur et les conversations
-  éventuellement sauvegardées, dans `%USERPROFILE%\.easyjobcall` ;
-* les composants téléchargés (modèles de transcription et de réponse), dans
-  `%LOCALAPPDATA%\EasyJobCall` ;
-* les clés API des services en ligne, **jamais** dans le fichier de configuration : elles se
-  trouvent dans le Gestionnaire d'identification de Windows, chiffrées par le système.
-
-Tout cela peut être supprimé depuis le programme ou à la main ; l'installateur du canal direct pose
-la question à la désinstallation, avec «Non» comme réponse par défaut.
-
-### La responsabilité de celui qui utilise le programme
-
-Enregistrer, transcrire ou faire traiter par un tiers ce que disent d'autres personnes peut exiger
-leur consentement, et est souvent soumis à des limites légales, contractuelles ou internes à
+<h3>LA RESPONSABILITÉ DE CELUI QUI UTILISE LE PROGRAMME</h3>
+<p>Enregistrer, transcrire ou faire traiter par un tiers ce que disent d'autres personnes peut
+exiger leur consentement, et est souvent soumis à des limites légales, contractuelles ou internes à
 l'entreprise. Les vérifier et les respecter relève de la responsabilité de celui qui utilise le
 programme. À l'égard des données personnelles traitées au moyen d'EasyJobCall, l'utilisateur agit
-comme responsable du traitement : l'éditeur du logiciel ne les reçoit pas, n'y a pas accès et ne
-les traite sous aucune forme.
+comme responsable du traitement : l'éditeur du logiciel ne les reçoit pas, n'y a pas accès et ne les
+traite sous aucune forme.</p>
 
-### Composants de tiers
+<h3>COMPOSANTS DE TIERS</h3>
+<p>Le programme inclut des composants de tiers — entre autres Qt/PySide6, faster-whisper et
+llama.cpp — dont les textes de licence voyagent avec le programme dans le fichier
+<code>NOTICE-terzi.txt</code>. Aucun d'eux n'introduit de télémétrie active dans ce produit.</p>
 
-Le programme inclut des composants de tiers — entre autres Qt/PySide6, faster-whisper et llama.cpp
-— dont les textes de licence voyagent avec le programme dans le fichier `NOTICE-terzi.txt`. Aucun
-d'eux n'introduit de télémétrie active dans ce produit.
+<h3>ÉDITEUR ET CONTACT</h3>
+<p class="contatto">Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+</section>
 
-### Éditeur et contact
+<section id="es">
+<h2>POLÍTICA DE PRIVACIDAD</h2>
+<p class="versione">EasyJobCall — versión 1.0.0</p>
 
-Rosario Viscardi (Vis-K) — <vis-k@outlook.it>
+<p>EasyJobCall no recoge datos personales por cuenta del editor y no le envía ninguno. No tiene
+telemetría, no rastrea el uso, no exige cuenta y no se comunica con ningún servidor del editor, en
+ninguna configuración.</p>
 
----
+<p>Sin embargo, este no es un programa cualquiera en lo que a privacidad se refiere, y la parte
+importante empieza aquí: <strong>EasyJobCall escucha y transcribe la voz de otras
+personas</strong>. Esas voces y esas frases son datos personales. No llegan al editor, pero se
+tratan — y quien decide cómo es quien usa el programa.</p>
 
-<h2 id="es">Español</h2>
-
-<p class="occhiello">EasyJobCall no recoge datos personales por cuenta del editor y no le envía
-ninguno. No tiene telemetría, no rastrea el uso, no exige cuenta y no se comunica con ningún
-servidor del editor, en ninguna configuración.</p>
-
-Sin embargo, este no es un programa cualquiera en lo que a privacidad se refiere, y la parte
-importante empieza aquí: **EasyJobCall escucha y transcribe la voz de otras personas**. Esas voces
-y esas frases son datos personales. No llegan al editor, pero se tratan — y quien decide cómo es
-quien usa el programa.
-
-### Qué escucha, y cuándo
-
-En su modo predeterminado captura el audio **reproducido** por el ordenador: el flujo que va hacia
-los altavoces o los auriculares, es decir las voces de los interlocutores. **No abre el
-micrófono.**
-
-A petición explícita del usuario, y tras una confirmación dedicada, puede escuchar en su lugar un
-dispositivo de entrada que él indique (micrófono, entrada de línea, tarjeta de captura). En ese
-modo se transcribe **todo lo que ese dispositivo oye**, incluida la voz del usuario y la de quien
-se encuentre en la sala. El modo permanece señalado en pantalla durante todo el tiempo, no se
+<h3>QUÉ ESCUCHA, Y CUÁNDO</h3>
+<p>En su modo predeterminado captura el audio <strong>reproducido</strong> por el ordenador: el flujo
+que va hacia los altavoces o los auriculares, es decir las voces de los interlocutores. <strong>No
+abre el micrófono.</strong></p>
+<p>A petición explícita del usuario, y tras una confirmación dedicada, puede escuchar en su lugar un
+dispositivo de entrada que él indique (micrófono, entrada de línea, tarjeta de captura). En ese modo
+se transcribe <strong>todo lo que ese dispositivo oye</strong>, incluida la voz del usuario y la de
+quien se encuentre en la sala. El modo permanece señalado en pantalla durante todo el tiempo, no se
 escribe en la configuración, y en el siguiente arranque el programa vuelve solo al modo
-predeterminado.
+predeterminado.</p>
 
-### Adónde va lo que oye
+<h3>ADÓNDE VA LO QUE OYE</h3>
+<p>El audio se transcribe <strong>en el ordenador del usuario</strong> y nunca sale de esa máquina,
+en ninguna configuración. Lo que puede salir es el <strong>texto ya transcrito</strong>, y solo
+hacia el destino que el usuario elija para el motor que redacta las respuestas. Son tres, y el
+programa los declara como tres cosas distintas, siempre, con un icono y una línea de estado que no
+desaparecen:</p>
+<ul>
+<li><strong>En el ordenador del usuario</strong> — no sale nada.</li>
+<li><strong>En otro ordenador de la red local</strong> — sale el texto transcrito, hacia la dirección
+indicada por el usuario, sin pasar por internet y sin credenciales.</li>
+<li><strong>A un servicio en línea</strong> elegido y configurado por el usuario (por ejemplo
+Anthropic, OpenAI o Google) — el texto transcrito va a ese proveedor, con la clave del usuario; a
+partir de ahí rige su política, no esta.</li>
+</ul>
+<p>La tercera opción es del usuario y el programa no la toma nunca por sí solo: sin una clave
+introducida por él, ninguna petición sale del ordenador.</p>
 
-El audio se transcribe **en el ordenador del usuario** y nunca sale de esa máquina, en ninguna
-configuración. Lo que puede salir es el **texto ya transcrito**, y solo hacia el destino que el
-usuario elija para el motor que redacta las respuestas. Son tres, y el programa los declara como
-tres cosas distintas, siempre, con un icono y una línea de estado que no desaparecen:
+<h3>LA GRABACIÓN</h3>
+<p>Guardar la conversación está <strong>desactivado</strong>. Si el usuario lo activa, un indicador
+rojo permanece visible todo el tiempo y los archivos se quedan en su ordenador, donde puede
+releerlos, exportarlos y borrarlos desde el propio programa.</p>
 
-| destino | qué sale |
-|---|---|
-| en el ordenador del usuario | no sale nada |
-| en otro ordenador de la red local | el texto transcrito, hacia la dirección indicada por el usuario, sin pasar por internet y sin credenciales |
-| a un servicio en línea elegido y configurado por el usuario (por ejemplo Anthropic, OpenAI o Google) | el texto transcrito a ese proveedor, con la clave del usuario; a partir de ahí rige su política, no esta |
+<h3>QUÉ SE GUARDA EN EL ORDENADOR</h3>
+<ul>
+<li>la configuración, los perfiles de oficio escritos por el usuario y las conversaciones que haya
+guardado, en <code>%USERPROFILE%\.easyjobcall</code>;</li>
+<li>los componentes descargados (modelos de transcripción y de respuesta), en
+<code>%LOCALAPPDATA%\EasyJobCall</code>;</li>
+<li>las claves API de los servicios en línea, <strong>nunca</strong> en el archivo de configuración:
+están en el Administrador de credenciales de Windows, cifradas por el sistema.</li>
+</ul>
+<p>Todo ello se puede borrar desde el programa o a mano; el instalador del canal directo lo pregunta
+al desinstalar, con «No» como respuesta predeterminada.</p>
 
-La tercera opción es del usuario y el programa no la toma nunca por sí solo: sin una clave
-introducida por él, ninguna petición sale del ordenador.
+<h3>LA RESPONSABILIDAD DE QUIEN USA EL PROGRAMA</h3>
+<p>Grabar, transcribir o hacer que un tercero procese lo que dicen otras personas puede requerir su
+consentimiento, y a menudo está sujeto a límites legales, contractuales o de empresa. Comprobarlos y
+respetarlos es responsabilidad de quien usa el programa. Respecto a los datos personales tratados
+mediante EasyJobCall, el usuario actúa como responsable del tratamiento: el editor del software no
+los recibe, no tiene acceso a ellos y no los trata de ninguna forma.</p>
 
-### La grabación
+<h3>COMPONENTES DE TERCEROS</h3>
+<p>El programa incluye componentes de terceros — entre otros Qt/PySide6, faster-whisper y llama.cpp
+— cuyos textos de licencia viajan con el programa en el archivo <code>NOTICE-terzi.txt</code>.
+Ninguno de ellos introduce telemetría activa en este producto.</p>
 
-Guardar la conversación está **desactivado**. Si el usuario lo activa, un indicador rojo permanece
-visible todo el tiempo y los archivos se quedan en su ordenador, donde puede releerlos, exportarlos
-y borrarlos desde el propio programa.
+<h3>EDITOR Y CONTACTO</h3>
+<p class="contatto">Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+</section>
 
-### Qué se guarda en el ordenador
+<section id="de">
+<h2>DATENSCHUTZERKLÄRUNG</h2>
+<p class="versione">EasyJobCall — Version 1.0.0</p>
 
-* la configuración, los perfiles de oficio escritos por el usuario y las conversaciones que haya
-  guardado, en `%USERPROFILE%\.easyjobcall`;
-* los componentes descargados (modelos de transcripción y de respuesta), en
-  `%LOCALAPPDATA%\EasyJobCall`;
-* las claves API de los servicios en línea, **nunca** en el archivo de configuración: están en el
-  Administrador de credenciales de Windows, cifradas por el sistema.
+<p>EasyJobCall erhebt keine personenbezogenen Daten für den Herausgeber und sendet ihm keine. Es hat
+keine Telemetrie, verfolgt die Nutzung nicht, verlangt kein Konto und kommuniziert in keiner
+Konfiguration mit einem Server des Herausgebers.</p>
 
-Todo ello se puede borrar desde el programa o a mano; el instalador del canal directo lo pregunta
-al desinstalar, con «No» como respuesta predeterminada.
+<p>Es ist allerdings kein gewöhnliches Programm, was den Datenschutz angeht, und der wichtige Teil
+beginnt hier: <strong>EasyJobCall hört die Stimmen anderer Menschen mit und transkribiert
+sie</strong>. Diese Stimmen und diese Sätze sind personenbezogene Daten. Sie erreichen den
+Herausgeber nicht, aber sie werden verarbeitet — und wer entscheidet wie, ist die Person, die das
+Programm benutzt.</p>
 
-### La responsabilidad de quien usa el programa
-
-Grabar, transcribir o hacer que un tercero procese lo que dicen otras personas puede requerir su
-consentimiento, y a menudo está sujeto a límites legales, contractuales o de empresa.
-Comprobarlos y respetarlos es responsabilidad de quien usa el programa. Respecto a los datos
-personales tratados mediante EasyJobCall, el usuario actúa como responsable del tratamiento: el
-editor del software no los recibe, no tiene acceso a ellos y no los trata de ninguna forma.
-
-### Componentes de terceros
-
-El programa incluye componentes de terceros — entre otros Qt/PySide6, faster-whisper y llama.cpp —
-cuyos textos de licencia viajan con el programa en el archivo `NOTICE-terzi.txt`. Ninguno de ellos
-introduce telemetría activa en este producto.
-
-### Editor y contacto
-
-Rosario Viscardi (Vis-K) — <vis-k@outlook.it>
-
----
-
-<h2 id="de">Deutsch</h2>
-
-<p class="occhiello">EasyJobCall erhebt keine personenbezogenen Daten für den Herausgeber und
-sendet ihm keine. Es hat keine Telemetrie, verfolgt die Nutzung nicht, verlangt kein Konto und
-kommuniziert in keiner Konfiguration mit einem Server des Herausgebers.</p>
-
-Es ist allerdings kein gewöhnliches Programm, was den Datenschutz angeht, und der wichtige Teil
-beginnt hier: **EasyJobCall hört die Stimmen anderer Menschen mit und transkribiert sie**. Diese
-Stimmen und diese Sätze sind personenbezogene Daten. Sie erreichen den Herausgeber nicht, aber sie
-werden verarbeitet — und wer entscheidet wie, ist die Person, die das Programm benutzt.
-
-### Was es mithört, und wann
-
-Im Standardmodus nimmt es den Ton auf, den der Rechner **wiedergibt**: den Strom zu Lautsprechern
-oder Kopfhörern, also die Stimmen der Gesprächspartner. **Es öffnet das Mikrofon nicht.**
-
-Auf ausdrücklichen Wunsch der Benutzerin oder des Benutzers und nach einer eigenen Bestätigung kann
-es stattdessen einem angegebenen Eingabegerät zuhören (Mikrofon, Line-in, Aufnahmekarte). In diesem
-Modus wird **alles transkribiert, was dieses Gerät hört**, auch die eigene Stimme und die von
+<h3>WAS ES MITHÖRT, UND WANN</h3>
+<p>Im Standardmodus nimmt es den Ton auf, den der Rechner <strong>wiedergibt</strong>: den Strom zu
+Lautsprechern oder Kopfhörern, also die Stimmen der Gesprächspartner. <strong>Es öffnet das Mikrofon
+nicht.</strong></p>
+<p>Auf ausdrücklichen Wunsch und nach einer eigenen Bestätigung kann es stattdessen einem
+angegebenen Eingabegerät zuhören (Mikrofon, Line-in, Aufnahmekarte). In diesem Modus wird
+<strong>alles transkribiert, was dieses Gerät hört</strong>, auch die eigene Stimme und die von
 Personen im Raum. Der Modus bleibt die ganze Zeit auf dem Bildschirm angezeigt, wird nicht in die
 Konfiguration geschrieben, und beim nächsten Start kehrt das Programm von selbst in den
-Standardmodus zurück.
+Standardmodus zurück.</p>
 
-### Wohin geht, was es hört
+<h3>WOHIN GEHT, WAS ES HÖRT</h3>
+<p>Der Ton wird <strong>auf dem Rechner der Benutzerin oder des Benutzers</strong> transkribiert und
+verlässt diese Maschine in keiner Konfiguration. Hinausgehen kann der <strong>bereits transkribierte
+Text</strong>, und nur zu dem Ziel, das für den Motor gewählt wurde, der die Antworten schreibt. Es
+sind drei, und das Programm erklärt sie als drei verschiedene Dinge, immer, mit einem Symbol und
+einer Statuszeile, die nicht verschwinden:</p>
+<ul>
+<li><strong>Auf dem eigenen Rechner</strong> — es geht nichts hinaus.</li>
+<li><strong>Auf einem anderen Rechner im lokalen Netz</strong> — der transkribierte Text geht hinaus,
+an die angegebene Adresse, ohne das Internet und ohne Zugangsdaten.</li>
+<li><strong>Zu einem Online-Dienst</strong>, selbst gewählt und eingerichtet (etwa Anthropic, OpenAI
+oder Google) — der transkribierte Text geht zu diesem Anbieter, mit dem eigenen Schlüssel; ab da
+gilt dessen Erklärung, nicht diese.</li>
+</ul>
+<p>Die dritte Wahl trifft die Benutzerin oder der Benutzer, und das Programm trifft sie nie von
+selbst: ohne einen selbst eingegebenen Schlüssel verlässt keine Anfrage den Rechner.</p>
 
-Der Ton wird **auf dem Rechner der Benutzerin oder des Benutzers** transkribiert und verlässt diese
-Maschine in keiner Konfiguration. Hinausgehen kann der **bereits transkribierte Text**, und nur zu
-dem Ziel, das für den Motor gewählt wurde, der die Antworten schreibt. Es sind drei, und das
-Programm erklärt sie als drei verschiedene Dinge, immer, mit einem Symbol und einer Statuszeile,
-die nicht verschwinden:
+<h3>DIE AUFZEICHNUNG</h3>
+<p>Das Speichern des Gesprächs ist <strong>ausgeschaltet</strong>. Wird es eingeschaltet, bleibt eine
+rote Anzeige die ganze Zeit sichtbar, und die Dateien bleiben auf dem eigenen Rechner, wo sie erneut
+gelesen, exportiert und aus dem Programm heraus gelöscht werden können.</p>
 
-| Ziel | was hinausgeht |
-|---|---|
-| auf dem eigenen Rechner | es geht nichts hinaus |
-| auf einem anderen Rechner im lokalen Netz | der transkribierte Text, an die angegebene Adresse, ohne das Internet und ohne Zugangsdaten |
-| zu einem selbst gewählten und eingerichteten Online-Dienst (etwa Anthropic, OpenAI oder Google) | der transkribierte Text zu diesem Anbieter, mit dem eigenen Schlüssel; ab da gilt dessen Erklärung, nicht diese |
+<h3>WAS AUF DEM RECHNER GESPEICHERT WIRD</h3>
+<ul>
+<li>die Konfiguration, die selbst geschriebenen Rollenprofile und etwaige gespeicherte Gespräche, in
+<code>%USERPROFILE%\.easyjobcall</code>;</li>
+<li>die heruntergeladenen Komponenten (Modelle für Transkription und Antwort), in
+<code>%LOCALAPPDATA%\EasyJobCall</code>;</li>
+<li>die API-Schlüssel der Online-Dienste, <strong>nie</strong> in der Konfigurationsdatei: sie liegen
+in der Windows-Anmeldeinformationsverwaltung, vom System verschlüsselt.</li>
+</ul>
+<p>Alles davon lässt sich aus dem Programm heraus oder von Hand löschen; der Installer des direkten
+Kanals fragt bei der Deinstallation nach, mit «Nein» als Vorgabe.</p>
 
-Die dritte Wahl trifft die Benutzerin oder der Benutzer, und das Programm trifft sie nie von
-selbst: ohne einen selbst eingegebenen Schlüssel verlässt keine Anfrage den Rechner.
-
-### Die Aufzeichnung
-
-Das Speichern des Gesprächs ist **ausgeschaltet**. Wird es eingeschaltet, bleibt eine rote Anzeige
-die ganze Zeit sichtbar, und die Dateien bleiben auf dem eigenen Rechner, wo sie erneut gelesen,
-exportiert und aus dem Programm heraus gelöscht werden können.
-
-### Was auf dem Rechner gespeichert wird
-
-* die Konfiguration, die selbst geschriebenen Rollenprofile und etwaige gespeicherte Gespräche, in
-  `%USERPROFILE%\.easyjobcall`;
-* die heruntergeladenen Komponenten (Modelle für Transkription und Antwort), in
-  `%LOCALAPPDATA%\EasyJobCall`;
-* die API-Schlüssel der Online-Dienste, **nie** in der Konfigurationsdatei: sie liegen in der
-  Windows-Anmeldeinformationsverwaltung, vom System verschlüsselt.
-
-Alles davon lässt sich aus dem Programm heraus oder von Hand löschen; der Installer des direkten
-Kanals fragt bei der Deinstallation nach, mit «Nein» als Vorgabe.
-
-### Die Verantwortung dessen, der das Programm benutzt
-
-Das Aufzeichnen, Transkribieren oder Verarbeitenlassen dessen, was andere sagen, kann deren
+<h3>DIE VERANTWORTUNG DESSEN, DER DAS PROGRAMM BENUTZT</h3>
+<p>Das Aufzeichnen, Transkribieren oder Verarbeitenlassen dessen, was andere sagen, kann deren
 Einwilligung erfordern und unterliegt oft gesetzlichen, vertraglichen oder betrieblichen Grenzen.
-Diese zu prüfen und einzuhalten liegt in der Verantwortung dessen, der das Programm benutzt. Für
-die mit EasyJobCall verarbeiteten personenbezogenen Daten ist die Benutzerin oder der Benutzer die
-verantwortliche Stelle: der Herausgeber der Software erhält sie nicht, hat keinen Zugriff darauf
-und verarbeitet sie in keiner Form.
+Diese zu prüfen und einzuhalten liegt in der Verantwortung dessen, der das Programm benutzt. Für die
+mit EasyJobCall verarbeiteten personenbezogenen Daten ist die Benutzerin oder der Benutzer die
+verantwortliche Stelle: der Herausgeber der Software erhält sie nicht, hat keinen Zugriff darauf und
+verarbeitet sie in keiner Form.</p>
 
-### Komponenten Dritter
+<h3>KOMPONENTEN DRITTER</h3>
+<p>Das Programm enthält Komponenten Dritter — unter anderem Qt/PySide6, faster-whisper und llama.cpp
+— deren Lizenztexte mit dem Programm in der Datei <code>NOTICE-terzi.txt</code> mitgeliefert werden.
+Keine davon führt in diesem Produkt aktive Telemetrie ein.</p>
 
-Das Programm enthält Komponenten Dritter — unter anderem Qt/PySide6, faster-whisper und llama.cpp
-— deren Lizenztexte mit dem Programm in der Datei `NOTICE-terzi.txt` mitgeliefert werden. Keine
-davon führt in diesem Produkt aktive Telemetrie ein.
+<h3>HERAUSGEBER UND KONTAKT</h3>
+<p class="contatto">Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+</section>
 
-### Herausgeber und Kontakt
+<section id="zh">
+<h2>隐私声明</h2>
+<p class="versione">EasyJobCall — 版本 1.0.0</p>
 
-Rosario Viscardi (Vis-K) — <vis-k@outlook.it>
+<p>EasyJobCall 不代表发行者收集任何个人数据，也不会向其发送任何数据。它不含遥测，不追踪使用情况，不需要账号，在任何配置下都不会与发行者的任何服务器通信。</p>
 
----
+<p>不过，就隐私而言这不是一个普通的程序，重要的部分从这里开始：<strong>EasyJobCall 会听取并转写他人的说话声</strong>。那些声音和那些句子属于个人数据。它们不会到达发行者手里，但确实被处理了 —— 而决定如何处理的人，是使用本程序的人。</p>
 
-<h2 id="zh">中文</h2>
+<h3>它听什么，什么时候听</h3>
+<p>在默认模式下，它捕获电脑<strong>播放</strong>的声音：送往扬声器或耳机的音频流，也就是对方的说话声。<strong>它不会打开麦克风。</strong></p>
+<p>在使用者明确要求并经过专门确认之后，它可以改为监听所指定的输入设备（麦克风、线路输入、采集卡）。在那种模式下，该设备听到的<strong>一切</strong>都会被转写，包括使用者自己的声音以及房间里其他人的声音。该模式会在整个过程中显示在屏幕上，不会写入配置文件，下次启动时程序会自动回到默认模式。</p>
 
-<p class="occhiello">EasyJobCall 不代表发行者收集任何个人数据，也不会向其发送任何数据。它不含遥测，不追踪使用情况，不需要账号，在任何配置下都不会与发行者的任何服务器通信。</p>
+<h3>它听到的内容去了哪里</h3>
+<p>音频在<strong>使用者的电脑上</strong>转写，在任何配置下都不会离开那台机器。可能离开的是<strong>已经转写好的文字</strong>，并且只会送往使用者为生成回答的引擎所选择的目的地。目的地有三种，程序始终把它们声明为三件不同的事，用一个图标和一行不会消失的状态提示：</p>
+<ul>
+<li><strong>在使用者自己的电脑上</strong> —— 什么都不会出去。</li>
+<li><strong>在局域网内的另一台电脑上</strong> —— 转写后的文字，送往使用者指定的地址，不经过互联网，也不需要凭据。</li>
+<li><strong>送往线上服务</strong>，由使用者自行选择并配置（例如 Anthropic、OpenAI 或 Google）—— 转写后的文字带着使用者的密钥发送给该服务商；从那一刻起适用的是该服务商的政策，而不是本声明。</li>
+</ul>
+<p>第三种选择由使用者做出，程序绝不会自行做出：没有使用者亲自输入的密钥，任何请求都不会离开电脑。</p>
 
-不过，就隐私而言这不是一个普通的程序，重要的部分从这里开始：**EasyJobCall 会听取并转写他人的说话声**。那些声音和那些句子属于个人数据。它们不会到达发行者手里，但确实被处理了 —— 而决定如何处理的人，是使用本程序的人。
+<h3>关于录制</h3>
+<p>保存对话默认是<strong>关闭</strong>的。如果由使用者打开，一个红色指示会全程可见，文件保留在他自己的电脑上，可以在程序内重新阅读、导出和删除。</p>
 
-### 它听什么，什么时候听
+<h3>哪些内容会保存在电脑上</h3>
+<ul>
+<li>配置、使用者自己撰写的职业档案，以及保存的对话，位于 <code>%USERPROFILE%\.easyjobcall</code>；</li>
+<li>下载的组件（转写模型和回答模型），位于 <code>%LOCALAPPDATA%\EasyJobCall</code>；</li>
+<li>线上服务的 API 密钥，<strong>绝不</strong>保存在配置文件中：它们存放在 Windows 凭据管理器里，由系统加密。</li>
+</ul>
+<p>这些内容都可以在程序内或手动删除；直接渠道的安装程序会在卸载时询问，默认答案是「否」。</p>
 
-在默认模式下，它捕获电脑**播放**的声音：送往扬声器或耳机的音频流，也就是对方的说话声。**它不会打开麦克风。**
+<h3>使用本程序者的责任</h3>
+<p>录制、转写他人所说的内容，或将其交由第三方处理，可能需要征得对方同意，并且往往受到法律、合同或公司规定的限制。核实并遵守这些规定是使用本程序者的责任。对于通过 EasyJobCall 处理的个人数据，使用者是数据控制者：本软件的发行者不接收这些数据，无法访问，也不以任何形式处理。</p>
 
-在使用者明确要求并经过专门确认之后，它可以改为监听所指定的输入设备（麦克风、线路输入、采集卡）。在那种模式下，该设备听到的**一切**都会被转写，包括使用者自己的声音以及房间里其他人的声音。该模式会在整个过程中显示在屏幕上，不会写入配置文件，下次启动时程序会自动回到默认模式。
+<h3>第三方组件</h3>
+<p>本程序包含第三方组件 —— 其中包括 Qt/PySide6、faster-whisper 和 llama.cpp —— 它们的许可证文本随程序一起放在 <code>NOTICE-terzi.txt</code> 文件中。它们都不会在本产品中引入主动遥测。</p>
 
-### 它听到的内容去了哪里
+<h3>发行者与联系方式</h3>
+<p class="contatto">Rosario Viscardi（Vis-K） — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+</section>
 
-音频在**使用者的电脑上**转写，在任何配置下都不会离开那台机器。可能离开的是**已经转写好的文字**，并且只会送往使用者为生成回答的引擎所选择的目的地。目的地有三种，程序始终把它们声明为三件不同的事，用一个图标和一行不会消失的状态提示：
-
-| 目的地 | 什么会出去 |
-|---|---|
-| 在使用者自己的电脑上 | 什么都不会出去 |
-| 在局域网内的另一台电脑上 | 转写后的文字，送往使用者指定的地址，不经过互联网，也不需要凭据 |
-| 送往由使用者自行选择并配置的线上服务（例如 Anthropic、OpenAI 或 Google） | 转写后的文字带着使用者的密钥发送给该服务商；从那一刻起适用的是该服务商的政策，而不是本声明 |
-
-第三种选择由使用者做出，程序绝不会自行做出：没有使用者亲自输入的密钥，任何请求都不会离开电脑。
-
-### 关于录制
-
-保存对话默认是**关闭**的。如果由使用者打开，一个红色指示会全程可见，文件保留在他自己的电脑上，可以在程序内重新阅读、导出和删除。
-
-### 哪些内容会保存在电脑上
-
-* 配置、使用者自己撰写的职业档案，以及保存的对话，位于 `%USERPROFILE%\.easyjobcall`；
-* 下载的组件（转写模型和回答模型），位于 `%LOCALAPPDATA%\EasyJobCall`；
-* 线上服务的 API 密钥，**绝不**保存在配置文件中：它们存放在 Windows 凭据管理器里，由系统加密。
-
-这些内容都可以在程序内或手动删除；直接渠道的安装程序会在卸载时询问，默认答案是「否」。
-
-### 使用本程序者的责任
-
-录制、转写他人所说的内容，或将其交由第三方处理，可能需要征得对方同意，并且往往受到法律、合同或公司规定的限制。核实并遵守这些规定是使用本程序者的责任。对于通过 EasyJobCall 处理的个人数据，使用者是数据控制者：本软件的发行者不接收这些数据，无法访问，也不以任何形式处理。
-
-### 第三方组件
-
-本程序包含第三方组件 —— 其中包括 Qt/PySide6、faster-whisper 和 llama.cpp —— 它们的许可证文本随程序一起放在 `NOTICE-terzi.txt` 文件中。它们都不会在本产品中引入主动遥测。
-
-### 发行者与联系方式
-
-Rosario Viscardi（Vis-K） — <vis-k@outlook.it>
-
----
-
-&copy; 2026 Vis-K
-
+</main>
+</body>
+</html>
