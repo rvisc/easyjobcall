@@ -11,9 +11,15 @@
 title: EasyJobCall
 
 # Finisce nel <meta name="description">, cioè in ciò che un motore di ricerca
-# mostra sotto il collegamento. Senza, ci finisce la prima riga utile della
-# pagina, che qui è il nome ripetuto.
-description: Capire e rispondere nelle call tecniche. Trascrizione in locale, risposte suggerite, invisibile nella condivisione schermo.
+# mostra sotto il collegamento — ma il tema Primer la attacca **anche al titolo**,
+# dopo una barra verticale. Misurato sul sito pubblicato: con la descrizione
+# lunga il titolo della scheda del browser diventava «EasyJobCall | Capire e
+# rispondere nelle call tecniche. Trascrizione in locale, risposte suggerite,
+# invisibile nella condivisione schermo.», cioè una frase intera in una linguetta
+# larga due centimetri, e la stessa frase come titolo del risultato di ricerca.
+# Tenuta corta — è il sottotitolo del prodotto, lo stesso di prodotto.props — il
+# titolo torna leggibile e la descrizione resta.
+description: Capire e rispondere nelle call tecniche
 
 # Il tema che GitHub Pages sta già usando di suo. Scriverlo qui non cambia
 # niente oggi: lo **blocca**, così il giorno in cui il tema predefinito
