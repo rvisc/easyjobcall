@@ -1,1 +1,23 @@
+# La pagina pubblica di EasyJobCall — https://rvisc.github.io/easyjobcall/
+#
+# Tre righe, e nessuna delle tre è estetica per caso.
 
+# Il tema Primer disegna un'intestazione sua sopra il contenuto, ma **solo
+# quando il titolo del sito è diverso da quello della pagina**. Senza questo
+# file il titolo del sito è il nome del repository — «easyjobcall», minuscolo —
+# mentre quello della pagina viene dal titolo del README, «EasyJobCall»:
+# diversi per due maiuscole, quindi la condizione scatta e le intestazioni
+# diventano due. Scrivendolo uguale, la condizione non scatta e ne resta una.
+title: EasyJobCall
+
+# Finisce nel <meta name="description">, cioè in ciò che un motore di ricerca
+# mostra sotto il collegamento. Senza, ci finisce la prima riga utile della
+# pagina, che qui è il nome ripetuto.
+description: Capire e rispondere nelle call tecniche. Trascrizione in locale, risposte suggerite, invisibile nella condivisione schermo.
+
+# Il tema che GitHub Pages sta già usando di suo. Scriverlo qui non cambia
+# niente oggi: lo **blocca**, così il giorno in cui il tema predefinito
+# cambia, questa pagina resta com'è invece di cambiare aspetto da sola —
+# ed è una pagina il cui indirizzo sta nella scheda del negozio e, quel che
+# più conta, nel campo dell'informativa privacy.
+theme: jekyll-theme-primer
