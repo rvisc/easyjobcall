@@ -38,11 +38,17 @@ chiave: EasyJobCall dichiara a schermo quale dei tre, sempre, con un'icona e una
 non spariscono.
 
 Non apre il microfono se non sei tu a chiederglielo, non registra niente se non glielo chiedi, e
-la sua finestra è esclusa dalla condivisione schermo: chi guarda la tua condivisione vede la
-riunione, non il programma.
+la sua finestra è esclusa dalla condivisione schermo: quello che condividi resta la riunione, non
+il tuo desktop. Serve a non mostrare per sbaglio quello che hai aperto, non a nascondere che stai
+usando un programma: dirlo ai tuoi interlocutori resta una tua scelta.
 
 <p class="avvertenza">Trascrivere ciò che dicono altre persone può richiedere il loro consenso. È
 una responsabilità di chi usa il programma, e EasyJobCall non la prende al posto tuo.</p>
+
+**Aggiornamenti e sicurezza.** Gli aggiornamenti di sicurezza sono garantiti per cinque anni dalla
+data in cui una versione è stata immessa sul mercato. Chi individua una vulnerabilità può scriverne
+a <vis-k@outlook.it>: riceve conferma della segnalazione e viene tenuto informato. Chi segnala in
+buona fede, senza divulgare il problema prima che sia corretto, non ha niente da temere.
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#it">Privacy</a></p>
@@ -69,11 +75,17 @@ computer on your network, or by an online service with your own key: EasyJobCall
 which of the three, always, with an icon and a status line that do not go away.
 
 It does not open your microphone unless you ask it to, records nothing unless you ask, and its
-window is excluded from screen capture: people watching your shared screen see the meeting, not the
-program.
+window is excluded from screen capture: what you share stays the meeting, not your desktop. This is
+here so you do not show what you have open by mistake, not to hide that you are using a program:
+telling the people you are talking to is your choice.
 
 <p class="avvertenza">Transcribing what other people say may require their consent. That is the
 responsibility of whoever uses the program, and EasyJobCall does not take it on your behalf.</p>
+
+**Updates and security.** Security updates are provided for five years from the date a version was
+placed on the market. Anyone who finds a vulnerability can write to <vis-k@outlook.it>: they get an
+acknowledgement and are kept informed. Anyone reporting in good faith, without disclosing the
+problem before it is fixed, has nothing to fear.
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#en">Privacy</a></p>
@@ -101,12 +113,18 @@ votre propre clé : EasyJobCall dit à l'écran lequel des trois, toujours, avec
 ligne d'état qui ne disparaissent pas.
 
 Il n'ouvre pas votre microphone si vous ne le lui demandez pas, n'enregistre rien sans votre
-demande, et sa fenêtre est exclue de la capture d'écran : ceux qui regardent votre partage voient
-la réunion, pas le programme.
+demande, et sa fenêtre est exclue de la capture d'écran : ce que vous partagez reste la réunion, et
+non votre bureau. C'est fait pour ne pas montrer par erreur ce que vous avez ouvert, pas pour cacher
+que vous utilisez un programme : le dire à vos interlocuteurs reste votre choix.
 
 <p class="avvertenza">Transcrire ce que disent d'autres personnes peut exiger leur consentement.
 C'est la responsabilité de celui qui utilise le programme, et EasyJobCall ne la prend pas à votre
 place.</p>
+
+**Mises à jour et sécurité.** Les mises à jour de sécurité sont assurées pendant cinq ans à compter
+de la date de mise sur le marché d'une version. Qui découvre une vulnérabilité peut écrire à
+<vis-k@outlook.it> : un accusé de réception est envoyé et la personne est tenue informée. Qui
+signale de bonne foi, sans divulguer le problème avant sa correction, n'a rien à craindre.
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#fr">Privacy</a></p>
@@ -133,10 +151,17 @@ otro ordenador de tu red, o un servicio en línea con tu propia clave: EasyJobCa
 cuál de los tres, siempre, con un icono y una línea de estado que no desaparecen.
 
 No abre el micrófono si no se lo pides, no graba nada si no se lo pides, y su ventana está excluida
-de la captura de pantalla: quien mira lo que compartes ve la reunión, no el programa.
+de la captura de pantalla: lo que compartes sigue siendo la reunión, no tu escritorio. Sirve para no
+mostrar por error lo que tienes abierto, no para ocultar que usas un programa: decírselo a tus
+interlocutores sigue siendo cosa tuya.
 
 <p class="avvertenza">Transcribir lo que dicen otras personas puede requerir su consentimiento. Es
 responsabilidad de quien usa el programa, y EasyJobCall no la asume por ti.</p>
+
+**Actualizaciones y seguridad.** Las actualizaciones de seguridad están garantizadas durante cinco
+años desde la fecha en que una versión se introdujo en el mercado. Quien detecte una vulnerabilidad
+puede escribir a <vis-k@outlook.it>: recibe confirmación y se le mantiene al tanto. Quien informa de
+buena fe, sin divulgar el problema antes de que esté corregido, no tiene nada que temer.
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#es">Privacy</a></p>
@@ -164,12 +189,20 @@ EasyJobCall sagt auf dem Bildschirm, welches der drei, immer, mit einem Symbol u
 Statuszeile, die nicht verschwinden.
 
 Es öffnet das Mikrofon nicht, wenn man es nicht verlangt, zeichnet ohne Aufforderung nichts auf,
-und sein Fenster ist von der Bildschirmaufnahme ausgenommen: wer die Freigabe sieht, sieht die
-Besprechung, nicht das Programm.
+und sein Fenster ist von der Bildschirmaufnahme ausgenommen: geteilt wird die Besprechung und nicht
+der eigene Desktop. Das soll verhindern, versehentlich zu zeigen, was gerade geöffnet ist, und nicht
+verbergen, dass ein Programm im Einsatz ist: ob man es den Gesprächspartnern sagt, bleibt die eigene
+Entscheidung.
 
 <p class="avvertenza">Das Transkribieren dessen, was andere sagen, kann deren Einwilligung
 erfordern. Das liegt in der Verantwortung dessen, der das Programm benutzt, und EasyJobCall nimmt
 sie niemandem ab.</p>
+
+**Aktualisierungen und Sicherheit.** Sicherheitsaktualisierungen werden fünf Jahre ab dem Tag
+bereitgestellt, an dem eine Version in Verkehr gebracht wurde. Wer eine Sicherheitslücke findet,
+kann an <vis-k@outlook.it> schreiben: Der Eingang wird bestätigt und über den weiteren Verlauf wird
+informiert. Wer in gutem Glauben meldet, ohne das Problem vor seiner Behebung offenzulegen, hat
+nichts zu befürchten.
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#de">Privacy</a></p>
@@ -186,9 +219,13 @@ EasyJobCall 是一个停留在会议窗口之上的小面板，在谈话跑得�
 
 **转写在你自己的电脑上完成。** 音频不会被发送到任何地方，在任何配置下都不会离开你的机器。回答可以由你电脑上的模型生成，也可以由你网络里的另一台电脑，或者用你自己的密钥调用的线上服务生成：EasyJobCall 会始终在屏幕上说明是三者中的哪一种，用一个图标和一行不会消失的状态提示。
 
-你不主动要求，它就不会打开麦克风；你不主动要求，它就什么也不录制。它的窗口被排除在屏幕捕获之外：看你共享画面的人看到的是会议，不是这个程序。
+你不主动要求，它就不会打开麦克风；你不主动要求，它就什么也不录制。它的窗口被排除在屏幕捕获之外：你共享出去的仍然是会议，而不是你的桌面。这是为了避免你不小心把打开的东西展示出去，而不是为了隐瞒你在使用一个程序：要不要告诉对方，由你决定。
 
 <p class="avvertenza">转写他人所说的内容可能需要征得对方同意。这是使用本程序者的责任，EasyJobCall 不会代你承担。</p>
+
+**更新与安全。** 安全更新自某一版本投放市场之日起提供五年。发现安全漏洞的人可以写信到
+<vis-k@outlook.it>：你会收到确认，并被告知处理的进展。善意报告、并且在漏洞修复前不予公开的人，
+不必有任何顾虑。
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#zh">Privacy</a></p>
