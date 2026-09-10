@@ -51,7 +51,8 @@ a <vis-k@outlook.it>: riceve conferma della segnalazione e viene tenuto informat
 buona fede, senza divulgare il problema prima che sia corretto, non ha niente da temere.
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
-<span class="separatore">·</span> <a href="privacy.html#it">Privacy</a></p>
+<span class="separatore">·</span> <a href="privacy.html#it">Privacy</a>
+<span class="separatore">·</span> <a href="eula.html#it">Contratto</a></p>
 
 ---
 
@@ -88,7 +89,8 @@ acknowledgement and are kept informed. Anyone reporting in good faith, without d
 problem before it is fixed, has nothing to fear.
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
-<span class="separatore">·</span> <a href="privacy.html#en">Privacy</a></p>
+<span class="separatore">·</span> <a href="privacy.html#en">Privacy</a>
+<span class="separatore">·</span> <a href="eula.html#en">Licence</a></p>
 
 ---
 
@@ -127,7 +129,8 @@ de la date de mise sur le marché d'une version. Qui découvre une vulnérabilit
 signale de bonne foi, sans divulguer le problème avant sa correction, n'a rien à craindre.
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
-<span class="separatore">·</span> <a href="privacy.html#fr">Privacy</a></p>
+<span class="separatore">·</span> <a href="privacy.html#fr">Privacy</a>
+<span class="separatore">·</span> <a href="eula.html#fr">Contrat</a></p>
 
 ---
 
@@ -164,7 +167,8 @@ puede escribir a <vis-k@outlook.it>: recibe confirmación y se le mantiene al ta
 buena fe, sin divulgar el problema antes de que esté corregido, no tiene nada que temer.
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
-<span class="separatore">·</span> <a href="privacy.html#es">Privacy</a></p>
+<span class="separatore">·</span> <a href="privacy.html#es">Privacy</a>
+<span class="separatore">·</span> <a href="eula.html#es">Contrato</a></p>
 
 ---
 
@@ -205,7 +209,8 @@ informiert. Wer in gutem Glauben meldet, ohne das Problem vor seiner Behebung of
 nichts zu befürchten.
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
-<span class="separatore">·</span> <a href="privacy.html#de">Privacy</a></p>
+<span class="separatore">·</span> <a href="privacy.html#de">Privacy</a>
+<span class="separatore">·</span> <a href="eula.html#de">Vertrag</a></p>
 
 ---
 
@@ -228,7 +233,8 @@ EasyJobCall 是一个停留在会议窗口之上的小面板，在谈话跑得�
 不必有任何顾虑。
 
 <p class="rimandi"><a href="https://apps.microsoft.com/detail/9PB5GMNG39FW">Microsoft Store</a>
-<span class="separatore">·</span> <a href="privacy.html#zh">Privacy</a></p>
+<span class="separatore">·</span> <a href="privacy.html#zh">Privacy</a>
+<span class="separatore">·</span> <a href="eula.html#zh">许可协议</a></p>
 
 ---
 
