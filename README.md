@@ -3,7 +3,7 @@ title: EasyJobCall
 permalink: /
 ---
 
-<img src="logo-vis-k.png" alt="Vis-K" class="logo-vis-k" width="76">
+<a href="https://rvisc.github.io/vis-k/"><img src="logo-vis-k.png" alt="Vis-K" class="logo-vis-k" width="76"></a>
 
 # EasyJobCall
 
